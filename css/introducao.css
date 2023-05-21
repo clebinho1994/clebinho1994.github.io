@@ -13,7 +13,6 @@
   line-height: 1.125;
   margin-bottom: 30px;
   position: relative;
-
 }
 
 .introducao h1::before {
@@ -28,6 +27,11 @@
   z-index: -1;
 }
 
+.introducao p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
 @media (max-width: 1000px) {
   .introducao h1 {
     font-size: 3rem;
@@ -39,22 +43,21 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
-
   .introducao h1 {
     font-size: 2rem;
   }
-  
   .introducao h1::before {
     width: 30px;
     height: 10px;
     left: 0px;
   }
-
 }
 
 @media (max-width: 400px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
   .introducao img {
     display: none;
-    grid-template-columns: 1fr;
   }
 }
